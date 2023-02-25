@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mangal Coaching for Kids - Registration Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <center>
+    <h1>Mangal Coaching for Kids</h1>
+    <p>Register your child for our coaching program!</p>
+  </header>
+  <main>
+    <form id="registration-form" onsubmit="return validateForm()" method="post" action="submit.php">
+      <input type="hidden" name="coaching_name" value="Mangal Coaching for Kids">
+      <input type="hidden" name="contact_email" value="mangalcoaching@gmail.com">
+      <input type="hidden" name="contact_phone" value="7785087770">
+      <div class="form-group">
+        <label for="student_name">Student's Name *</label>
+        <input type="text" id="student_name" name="student_name" required>
+      </div>
+      <div class="form-group">
+        <label for="parent_name">Parent's Name *</label>
+        <input type="text" id="parent_name" name="parent_name" required>
+      </div>
+      <div class="form-group">
+        <label for="parent_email">Parent's Email *</label>
+        <input type="email" id="parent_email" name="parent_email" required>
+      </div>
+      <div class="form-group">
+        <label for="parent_phone">Parent's Phone *</label>
+        <input type="tel" id="parent_phone" name="parent_phone" required>
+      </div>
+      <div class="form-group">
+        <label for="student_age">Student's Age *</label>
+        <input type="number" id="student_age" name="student_age" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject(s) *</label>
+        <input type="text" id="subject" name="subject" required placeholder="Enter subject(s)">
+      </div>
+      <div class="form-group">
+        <label for="num_subjects">Number of Subjects *</label>
+        <input type="number" id="num_subjects" name="num_subjects" required min="1" max="5" placeholder="Enter number of subjects (max 5)">
+      </div>
+      <div class="form-group">
+        <label for="previous_experience">Previous Experience</label>
+        <textarea id="previous_experience" name="previous_experience"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="additional_comments">Additional Comments</label>
+        <textarea id="additional_comments" name="additional_comments"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</center>
+  <footer>
+    <p>&copy; Mangal Coaching for Kids</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
